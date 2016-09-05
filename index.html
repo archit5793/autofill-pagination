@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>assignment</title>
+    <script src="autocomplete.js"></script>
+    <script src="pagination.js"></script>
+    <script src="search.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css>">
+    <script src="bootstrap.min.js"></script>
+</head>
+<body onLoad="init();">
+<div class="container" id="main">
+<form name="test" id="test" class="form-group" onsubmit="search();">
+    <input type="text" name="text" class="form-control" id="searchtext" autocomplete="off" align="center"><button type="submit" id="sub" class="btn btn-primary">Search</button>
+</form>
+<div class="shadow" id="shadow" align="center">
+    <div class="output" id="output" align="center">
+    </div>
+</div>
+
+<div id="listingTable" align="center"></div>
+<a href="javascript:prevPage()" id="btn_prev" class="btn btn-danger">Prev</a>
+<a href="javascript:nextPage()" id="btn_next" class="btn btn-danger">Proceed</a>
+page: <span id="page"></span>
+    </div>
+</body>
+</html>
